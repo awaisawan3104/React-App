@@ -1,0 +1,1563 @@
+@import "variables.less";
+
+
+
+.admin-view{
+   padding-bottom: 23px;
+   background: #f4f5f9;
+ 
+    .admin-view-text {
+      margin-top: 60px;
+
+        .admin-view-heading {
+
+           h1{
+              color: @headingcolor;
+              text-transform: uppercase;
+              font-size: @headingsize;
+              font-weight: @headingweight;
+           }
+           p {
+              color: @subheadingcolor;
+              font-size: @subheadingsize;
+                
+                span {
+                  color: #209cee;
+                }  
+           }
+        } 
+
+        .admin-view-contact-btn {
+              background: @contactbtnbg;
+              border: none;
+              color: #fff;
+              padding: 11px 50px;
+              float: right;
+              font-size: 17px;
+              text-transform: uppercase;
+              border-radius: 5px;
+              font-weight: 600;
+        }
+        .export-csv-format-btn {
+              background: #209cee;
+              border: none;
+              color: #fff;
+              padding: 11px 33px;
+              float: right;
+              font-size: 17px;
+              text-transform: uppercase;
+              border-radius: 5px;
+              font-weight: 600;
+        }
+
+        .add-charity-btn {
+              background: #ff4f53;
+              border: none;
+              color: #fff;
+              padding: 11px 38px;
+              float: right;
+              font-size: 17px;
+              text-transform: uppercase;
+              border-radius: 5px;
+              font-weight: 600;
+        }            
+    }
+
+    .donation-status{
+      margin: 80px 0px;
+
+        .donation-status-box div {
+          display: inline-block;  
+          text-align: left;  
+        }
+
+        .donation-status-box {
+          text-align: center;
+          box-shadow: @mainboxshadow;
+          padding: 31px 20px 21px 0px;
+          width: 100%;
+          background: #fff;
+          border-radius: 5px;
+                  
+          img {
+            position: relative;
+            top: -22px;
+            left: 21%;
+            margin-right: 0px;
+            width: 63%;
+          }
+
+          h2{
+            font-size: 22px;
+            font-weight: 600;
+            color: #454545;
+          }
+
+          span {
+            position: relative;
+            top: -6px;
+            color: #99a0ae;
+          }
+      }
+    }
+    
+
+    .add-campaigns{
+      box-shadow: @mainboxshadow;
+      padding: 0px 25px 22px 25px;
+      background: #fff;
+      border-radius: 5px;
+
+        .campaigns-list-header {
+          padding: 32px 0px 28px;
+          border-bottom: 1px solid #ddd;
+              
+            .add-campaigns-heading {
+              font-size: @headingsize;
+              text-transform: uppercase;
+              color: @headingcolor;
+              font-weight: @headingweight;
+            }
+
+            .add-campaigns-list-btn {
+              background: transparent;
+              border: 1px solid #9a9a9a;
+              color: #9a9a9a;  
+              text-transform: uppercase;
+              padding: 8px 22px;
+              float: right;
+            }
+        } 
+        .campaigns-list-table{
+          margin: 0;
+
+            td {
+                font-size: 14px;
+                color: #454545;
+                padding: 18px 20px 16px 1px !important;
+                border-top: 0px solid #eee !important;
+                line-height: 20px;
+                font-weight:500;
+
+                p{
+                  font-size:12px;
+                  font-weight:normal;
+                }
+            }
+
+            .list-compaign-edit {
+                display: inherit;
+
+                 img {
+                      width: 30px;
+                      margin-left: 4px;
+                      cursor: pointer;
+                      margin-top: 12px;
+                }
+            }   
+
+            th {
+                border-bottom: 0px solid #999 !important;
+                padding: 18px 0px 23px 1px !important;
+                font-weight:600;
+            }
+
+            .list-id-number {
+                background: #fddbe9;
+                padding: 10px 22px;
+                font-size: 12px;
+                position: relative;
+                top: 0px;
+                max-width: max-content;
+            }
+
+            .blue{
+               background: #e0dff2;
+            }
+
+            .userdetails div {
+                display: inline-block;
+            }   
+
+            .userdetails-img{
+              width: 50px;
+              height: 50px;
+              vertical-align: top;
+                img{
+                  width: 100%;
+                  height: 100%;
+                  position: relative;
+                  top: -10px;
+                  border-radius: 50%;
+                }
+            }  
+            .userdetails-text{
+                width: 61%;
+                padding-left: 12px;
+                font-size: 14px;
+            }            
+        }     
+    }
+
+
+    .charity-list{
+      box-shadow: @mainboxshadow;
+      padding: 0px 25px 22px 25px;
+      background: #fff;
+      border-radius: 5px;
+      margin-top: 75px;
+
+        .campaigns-list-table{
+          margin: 0;
+            
+            .thead-table{
+               border-bottom: 1px solid #ddd;
+            }
+
+            td {
+                font-size: 14px;
+                color: #454545;
+                padding: 47px 20px 0px 1px !important;
+                border-top: 0px solid #eee !important;
+                line-height: 17px;
+                font-weight:500;
+
+                  &:last-child {
+                    padding-right: 0px !important;
+                    padding-left: 18px !important;
+                  }
+
+                p{
+                  font-size:12px;
+                  font-weight:normal;
+                }
+            }
+
+            .list-compaign-edit {
+                display: inline-block;
+
+                 img {
+                      width: 30px;
+                      margin-left: 8px;
+                      cursor: pointer;
+                      margin-top: -12px;
+                }
+            }   
+
+            th {
+                border-bottom: 0px solid #999 !important;
+                padding: 32px 0px 23px 1px !important;
+                font-weight:600;
+
+                &:last-child {
+                    padding-left: 25px !important;
+                    white-space: nowrap;
+                }
+
+                .up-down-arrow {
+                  margin-right: 4px;
+                }
+            }
+
+            .list-id-number {
+                background: #fddbe9;
+                padding: 10px 22px;
+                font-size: 12px;
+                position: relative;
+                width: max-content;
+            }
+            .blue{
+               background: #e0dff2;
+            }
+
+            .userdetails div {
+                display: inline-block;
+            }   
+
+            .userdetails-img{
+              width: 60px;
+              height: 60px;
+              vertical-align: top;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    top: -18px;
+                    border-radius: 50%;
+                }
+            }  
+            .userdetails-text{
+                width: 69%;
+                padding-left: 12px;
+                font-size: 14px;
+                position: relative;
+                top: 1px;
+            }            
+        } 
+        
+        .campaigns-list-add{
+          margin:0;
+
+            tbody{
+                margin-top:40px;
+            }
+
+            td {
+                padding: 34px 20px 0px 1px !important;
+
+                &:first-child{
+                padding-top:24px !important;
+                }
+            }    
+        }
+
+        .widget-table{
+          margin:0;
+            
+            tbody{
+                    
+                tr{
+                  border-top: 1px solid #ddd;
+                }
+
+                td {
+                padding: 21px 20px 18px 1px !important;
+
+                  &:last-child{
+                    padding-top:28px !important;
+                  }
+                }
+            }    
+        }
+
+
+
+        .pagination-box{
+            margin-bottom: 23px;
+            margin-top: 40px;
+            padding: 0px 4px;
+
+            .pagination {
+              display: inline-block;
+              a {
+                color: black;
+                float: left;
+                padding: 8px 12px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+
+              &:hover:not(.active) {background-color: #ddd;}
+
+              i{font: normal normal normal 14px/1 FontAwesome;}
+            }
+            .active {
+                background-color: #209cee;
+                color: white;
+                border: 1px solid #209cee;
+            }
+          }
+          .show-pagination-value {
+              color: #99a0ae;
+              font-weight: 600;
+              text-align: right;
+          }
+        }     
+    }
+
+
+    
+    .overview-box {
+      box-shadow: @mainboxshadow;
+      padding: 30px 25px 22px 25px;
+      background: #fff;
+      border-radius: 5px;
+
+      .add-campaigns-heading {
+        font-size: @headingsize;
+        text-transform: uppercase;
+        color: @headingcolor;
+        font-weight: @headingweight;
+      }
+      .overview-progress-bar{
+        margin-top: 60px;
+        margin-bottom: 84px;
+          .progress-bar{
+            width: 45px;
+            position: relative;
+            left: -8px;
+
+              img{
+                width: 100%;
+              }
+          }
+
+          .overview-text{
+            font-size:11px;
+
+              h3{
+                font-size:16px;
+                position: relative;
+                top: -9px;
+              }
+          }
+      }
+
+      .campaigns-graph img {
+        width: 100%;
+      }
+    }
+    .search-bar {
+      display: inline-flex;
+
+      .input-group{
+        width: 65%;
+        border: 1px solid #ddd;
+        box-shadow: @mainboxshadow;
+        border-radius: 5px;
+
+          .form-control {
+            border: none;
+            border-radius: 5px;
+
+            &:focus{
+            outline:none;
+            box-shadow: none;
+            }
+             
+             &::placeholder {
+              color: #454545;
+              text-transform: uppercase;
+              opacity: .5; /* Firefox */
+            }
+          }
+
+          .input-group-addon:last-child{
+            border: none;
+
+            img{
+              width: 22px;
+            }
+          }
+      } 
+
+      .widget-filter-btn {
+        width: 35%;
+        padding-top: 10px;
+
+          .checkbox-container{
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 0px;
+            cursor: pointer;
+            font-size: 15px;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: normal;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+              input {
+                 position: absolute;
+                 opacity: 0;
+                 cursor: pointer;
+
+                    &:checked ~ .checkmark {
+                      background-color: #fff;
+                    }
+
+                    &:checked ~ .checkmark:after {
+                      display: block;
+                  }
+              }        
+
+              .checkmark {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 height: 25px;
+                 width: 25px;
+                 background-color: #fff;
+                 border: 1px solid #ddd;
+                 border-radius: 5px;
+
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 9px;
+                    top: 4px;
+                    width: 7px;
+                    height: 12px;
+                    border: solid #209cee;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                  }
+              }
+            }
+          }  
+      }
+
+      .user-profile-account{
+        margin-top: 75px;
+        margin-bottom: 100px;
+          
+          .profile-details-box{
+            background: #fff;
+            padding: 125px 0px;
+            box-shadow: @mainboxshadow;
+            border-radius: @mainborderradius;
+  
+              .profile-img-box {
+                width: 185px;
+                height: 185px;   
+                border: 4px solid #209cee;
+                border-radius: 50%;
+                margin: auto;
+              
+                  img{
+                    width: 100%; 
+                    border-radius: 50%;
+                  }  
+              }
+
+              .profile-details {
+                font-size: 18px;
+                text-align: center;
+                color: #209cee;
+                line-height: 20px;
+                margin-top: 20px;
+
+                  span{
+                    font-size: 15px;
+                    color: #000;
+                  }
+              }
+
+              .edit-img {
+                position: absolute;
+                left: 23%;
+                top: 46%;
+                cursor: pointer;
+              }
+          }
+      }
+
+      .profile-edit-box{
+        box-shadow: @mainboxshadow;
+        padding: 27px 40px;
+        background: #fff;
+        border-radius: @mainborderradius;
+
+         
+           h1 {
+              color: #454545;
+              text-transform: uppercase;
+              font-size: 22px;
+              font-weight: bold;
+              margin-bottom: 25px;
+            }
+    
+          .form-group {
+            position: relative;
+            margin-bottom: 4rem;
+            border-bottom: @inputborderbottom;
+            text-align: left;
+          }
+
+          .form-control-placeholder {
+            position: absolute;
+            top: 0;
+            padding: 3px 0 0 9px;
+            transition: all 200ms;
+            font-size: 1.7rem;
+            color: @labelcolor;
+            font-weight: normal; 
+          }
+
+         .form-control:focus + .form-control-placeholder,
+         .form-control:valid + .form-control-placeholder {
+            font-size: 1.3rem;
+            transform: translate3d(0, -100%, 0);
+            opacity: 1;
+            padding: 0px 0 0 7px;
+            top: 15px;
+          }
+
+          .form-input-box {
+            display: inline-block;
+          }
+
+          .right-box{
+            width:84%;
+            text-align:left;
+          }
+
+          .form-control{
+            border: @inputborder;
+            margin-bottom:2px;
+            font-size: @inputfontsize;
+            padding: 0px 0px 9px 9px;
+            color: @inputcolor;
+            position: relative;
+            top: 9px;
+            background: @inputbg;
+
+              &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+              }
+          }
+
+          .img-box img {
+            width: 30px;
+          }
+
+          .btn.btn-primary {
+            background: @primarybg none repeat scroll 0 0;
+            border-color: @primaryborder;
+            color: @btncolor;
+            font-size: @btnfontsize;
+            height: 50px;
+            line-height: 50px;
+            padding: 0px 71px !important;
+            border-radius: @btnborderradius;
+            text-transform: capitalize;
+            font-weight: @btnfontweight;
+          }
+      }
+      .payment-method {
+        margin-bottom: 120px;
+
+      .payment-method-box {
+          box-shadow: @mainboxshadow;
+          padding: 50px 60px 50px 60px;
+          background: #fff;
+          border-radius:@mainborderradius;
+          margin-top: 60px;
+
+          h1 {
+            color: #454545;
+            text-transform: capitalize;
+            font-size: 22px;
+            font-weight: bold;
+          }
+
+          .stipe-btn {
+            border: none;
+            background: #1ce684 none repeat scroll 0 0;
+            color: #fff;
+            font-size: 18px;
+            padding: 0px 48px !important;
+            height: 57px;
+            line-height: 50px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            margin-right: 6px;
+            font-weight: 600;
+            float: right;
+          }
+          .paypel-btn{
+            background: #d6d6d6;
+          }
+        }
+      }
+
+}
+
+
+
+.add-charity-form{
+    margin-top: 65px;
+    box-shadow: @mainboxshadow;
+    background: #fff;
+    padding: 50px 60px;
+
+    .form-group {
+       position: relative;
+       margin-bottom: 6rem;
+       border-bottom: @inputborderbottom;
+       text-align: left;
+    }
+
+    .form-control-placeholder {
+       position: absolute;
+       top: 0;
+       padding: 3px 0 0 9px;
+       transition: all 200ms;
+       font-size: 1.7rem;
+       color: @labelcolor;
+       font-weight: normal; 
+
+    }
+
+    .form-control:focus + .form-control-placeholder,
+    .form-control:valid + .form-control-placeholder {
+       font-size: 1.3rem;
+       transform: translate3d(0, -100%, 0);
+       opacity: 1;
+       padding: 0px 0 0 7px;
+       top: 15px;
+    }
+
+    .form-input-box {
+       display: inline-block;
+       width: 100%;
+    }
+
+    .form-control{
+       border: @inputborder;
+       margin-bottom:2px;
+       font-size: @inputfontsize;
+       padding: 4px 0px 9px 9px;
+       color: @inputcolor;
+       position: relative;
+       top: 9px;
+       background: @inputbg;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+    .point-of-contact {
+        background: #f3f3f3;
+        padding: 42px 34px 0px 34px;
+
+        h3{
+          margin-left: 23px;
+          margin-bottom: 44px;
+        }
+    }
+    .add-charity-btn-box {
+      margin-top: 58px;
+      margin-bottom: 25px;
+    }
+    .btn.btn-primary {
+        background: @primarybg none repeat scroll 0 0;
+        border-color: @primaryborder;
+        color: @btncolor;
+        font-size: 14px;
+        padding: 0px 27px !important;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        border-radius: @btnborderradius;
+        text-transform: uppercase;
+        margin-right: 6px;
+        font-weight: 600;
+    }
+    .pre-btn {
+      background: transparent !important;
+      border: transparent !important;
+      border: 1px solid #a8a8a8 !important;
+      color: #a8a8a8 !important;
+      margin-right: 14px !important;
+    }
+
+    .file-upload {
+        background-color: #ffffff;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        h3 {
+          font-size: 16px;
+        }
+
+        .image-upload-wrap {
+          margin-top: 20px;
+          border: 2px dashed #b5b5b5;
+          position: relative;
+          padding: 20px 0px;
+
+             .file-upload-input {
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                outline: none;
+                opacity: 0;
+                cursor: pointer;
+             }
+
+             .drag-text {
+                text-align: center;
+
+                  h3 {
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    color: #b5b5b5;
+                    font-size: 13px;
+                  }
+             }
+        }
+
+        .file-upload-content {
+            display: none;
+            text-align: center;
+
+              .file-upload-image {
+                  max-height: 200px;
+                  max-width: 200px;
+                  margin: auto;
+                  padding: 20px;
+              }
+        }
+
+        .file-upload-btn {
+            margin-top: 27px;
+            width: auto;
+            background: #d6d6d6 !important;
+            border-color: #d6d6d6 !important;
+        }
+    }
+
+    .radio-btn-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 35px;
+    font-weight: 500;
+    float:right;
+    top: -35px;
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+            
+            &:checked ~ .checkmark {
+              background-color: transparent;
+            }
+
+            &:checked ~ .checkmark:after {
+              display: block;
+            }
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: transparent;
+          border-radius: 50%;
+          border: 1px solid #ddd;
+
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 5px;
+            left: 5px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #2fbfa0;
+          }
+        }
+    }
+    .form-heading {
+      font-size: 1.7rem;
+      color: #000;
+    } 
+
+    .one-off-payment{
+      display:block;
+        div{
+          display: inline-block;
+          width: 49%;
+        }
+
+      h3 {
+        font-size: 12px;
+        position: relative;
+        top: -21px;
+        margin-left: 21px;
+      }  
+    }
+
+    .add-payment-btn {
+      float: right;
+      margin-right: 0px !important;
+      margin-bottom: 5px !important;
+    }
+
+    .Payment-box {
+      background: #f3f3f3;
+      padding: 29px 30px 1px 30px;
+
+      h4 {
+        font-size: 13px;
+        color: #99a0ae;
+        margin-bottom: 30px;
+      }
+
+      .close-btn {
+        position: absolute;
+        right: 32px;
+        top: 24px;
+        width: 28px;
+        height: 28px;
+        opacity: 1;
+        background: transparent;
+        border: 1px solid #333;
+
+          &:before{
+            position: absolute;
+            left: 13px;
+            content: ' ';
+            height: 20px;
+            width: 1px;
+            background-color: #333;
+            margin-top: -9px;
+            transform: rotate(45deg);
+          }
+
+          &:after{
+            position: absolute;
+            left: 13px;
+            content: ' ';
+            height: 20px;
+            width: 1px;
+            background-color: #333;
+            margin-top: -9px;
+            transform: rotate(-45deg);
+          }
+      }
+    }
+
+    .edit-placement-url{
+     width: 89%;
+    }
+
+    input[type="date"]::before { 
+      content: attr(data-placeholder);
+      width: 100%;
+    }  
+
+    input[type="date"]:focus::before,
+    input[type="date"]:valid::before { display: none }
+ 
+
+    .switch-btn{
+      float: right;
+      position: relative;
+      top: -49px;
+    
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        input {
+          display:none;
+        } 
+
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: .4s;
+          transition: .4s;
+
+            &:before {
+              position: absolute;
+              content: "";
+              height: 26px;
+              width: 26px;
+              left: 4px;
+              bottom: 4px;
+              background-color: white;
+              -webkit-transition: .4s;
+              transition: .4s;
+            }
+        }
+
+        .round {
+          border-radius: 34px;  
+
+            &:before {
+              border-radius: 50%;
+            }
+        }
+
+        input:checked + .slider {
+          background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px);
+        }
+      }
+    }
+
+    .custom-select {
+      position: relative;
+      margin-top: -11px;
+
+        .form-control-select{
+          font-weight: 500;
+          font-family: 'Montserrat', sans-serif;
+          padding-left: 13px;
+          margin-bottom: 0px;
+          color: #99a0ae;
+          font-size: 1.3rem;
+        }
+
+        select {
+          display: none;
+        }
+
+        .select-selected {
+          background-color: transparent;
+        }
+
+        .select-selected:after {
+          position: absolute;
+          content: "\f107";
+          font: normal normal normal 14px/1 FontAwesome;
+          top: 23px;
+          right: 23px;
+          font-size: 27px;
+          width: 0;
+          height: 0;
+          color: #99a0ae;
+          border-color: #fff transparent transparent transparent;
+        }
+
+        .select-selected.select-arrow-active:after {
+          border-color: transparent transparent #fff transparent;
+          top: 20px;
+          content: "\f106";
+        }
+
+        .select-items div,.select-selected {
+          color: #000;
+          padding: 8px 16px;
+          border: 0px solid transparent;
+          border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+          cursor: pointer;
+          user-select: none;
+          font-family: 'Montserrat', sans-serif;
+          padding-top: 0px;
+          margin-top: -5px;
+          font-size: 1.8rem;
+        }
+
+        .select-items {
+          position: absolute;
+          background-color: #fff;
+          top: 100%;
+          left: 0;
+          right: 0;
+          z-index: 99;
+          margin-top: 3px;
+          padding-bottom: 18px !important;
+          padding: 0px 10px;
+          box-shadow: -1px 11px 16px 4px #ddd;
+        }
+
+        .select-items div {
+          border-bottom: 2px solid #ececec;
+          padding-top: 12px;
+          font-size: 14px;
+        }
+
+        .select-hide {
+          display: none;
+        }
+    }
+}
+
+
+
+
+@media (max-width:2500px) and (min-width:1920px) {
+     
+    .admin-view .container-fluid .admin-view-text .admin-view-heading h1{
+      font-size: 30px;
+    } 
+    .admin-view .container-fluid .admin-view-text .admin-view-heading p {
+      color: #828282;
+      font-size: 24px;
+    }
+    .admin-view .container-fluid .admin-view-text .admin-view-contact-btn {
+      background: #1ce684;
+      font-size: 24px;
+      margin-top: 18px;
+    }
+    .admin-view .container-fluid .donation-status .donation-status-box img {
+      top: -33px;
+      width: 100%;
+      left: 4px;
+    }
+    .admin-view .donation-status .donation-status-box div{
+      margin-left: 18px;
+    }
+    .admin-view .container-fluid .donation-status .donation-status-box h2 {
+    font-size: 36px;
+    }
+    .admin-view .container-fluid .donation-status .donation-status-box span {
+       top: -6px;
+    font-size: 20px;
+    }
+    .admin-view .container-fluid .add-campaigns .campaigns-list-header .add-campaigns-heading {
+    font-size: 30px;
+    }
+    .admin-view .container-fluid .add-campaigns .campaigns-list-header .add-campaigns-list-btn {
+    font-size: 18px;
+    }
+    .admin-view .container-fluid .add-campaigns .campaigns-list-table td {
+    font-size: 20px;
+    }
+    .admin-view .container-fluid .add-campaigns .campaigns-list-table .list-id-number {
+    font-size: 16px;
+    }
+
+    .admin-view .container-fluid .overview-box .add-campaigns-heading {
+    font-size: 30px;
+    }
+    .admin-view .container-fluid .add-campaigns .campaigns-list-table .list-compaign-edit img {
+    width: 45px;
+    }
+    .admin-view .container-fluid .add-campaigns .campaigns-list-table th{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 32px 0px 29px 1px !important;
+    }
+
+    .admin-view .add-campaigns .campaigns-list-table .userdetails-text {
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    .admin-view .add-campaigns .campaigns-list-table td p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .admin-view .add-campaigns .campaigns-list-table .userdetails-img {
+      width: 80px;
+    height: 80px;
+    }
+    .admin-view .add-campaigns .campaigns-list-table .userdetails-text {
+      width: 65%;
+    }
+
+
+    .admin-view .charity-list .campaigns-list-table td {
+      font-size: 20px;
+      line-height: 23px;
+    }
+    .admin-view .charity-list .campaigns-list-table th {
+    font-size: 20px;
+    }
+    .admin-view .charity-list .pagination-box .pagination a {
+    font-size: 20px;
+    padding: 8px 16px;
+    }
+    .admin-view .charity-list .pagination-box .show-pagination-value {
+    font-size: 20px;
+    text-align: right;
+    }
+    .admin-view .admin-view-text .export-csv-format-btn{
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .admin-view .charity-list .campaigns-list-table td p {
+    font-size: 16px;
+    line-height: 20px;
+    }
+    .admin-view .charity-list .campaigns-list-table .userdetails-img {
+      width: 77px;
+      height: 77px;
+    }
+    .admin-view .charity-list .campaigns-list-table .userdetails-text {
+      width: 65%;
+    }
+    .admin-view .charity-list .campaigns-list-table .userdetails-text {
+      font-size: 19px;
+      line-height: 24px;
+    }
+    .admin-view .charity-list .campaigns-list-table .list-compaign-edit img {
+    width: 45px;
+    margin-left: 12px;
+    }
+    .admin-view .charity-list .campaigns-list-table .list-id-number {
+    padding: 14px 34px;
+    font-size: 20px;
+    }
+    .admin-view .admin-view-text .add-charity-btn{
+     font-size: 24px;
+    }
+    .admin-view .search-bar .widget-filter-btn .checkbox-container{
+      font-size: 18px;
+      color: #454545;
+    }
+    .admin-view .search-bar .widget-filter-btn .checkbox-container .checkmark {
+    left: -7px;
+    height: 30px;
+    width: 30px;
+    }
+    .admin-view .search-bar .widget-filter-btn .checkbox-container .checkmark:after {
+    left: 10px;
+    top: 4px;
+    width: 9px;
+    height: 16px;
+    }
+
+
+    .admin-view .overview-box .overview-progress-bar .progress-bar {
+      width: 70px;
+      left: 0px;
+      margin-right: 10px;
+    }
+    .admin-view .overview-box .overview-progress-bar .overview-text {
+      font-size: 16px;
+    }
+    .admin-view .overview-box .overview-progress-bar .overview-text h3 {
+      font-size: 24px;
+    }
+    .campaigns-graph img {
+      width: 100%;
+    }
+    .admin-view .overview-box .overview-progress-bar{
+      margin-bottom: 76px;
+    }
+
+    .add-charity-form .form-control-placeholder{
+      font-size: 23px;
+    }
+    .add-charity-form .form-control{
+      font-size: 23px;
+    }
+    .add-charity-form .form-control:focus + .form-control-placeholder, .add-charity-form .form-control:valid + .form-control-placeholder {
+      font-size: 19px;
+    }
+    .file-upload h3 {
+      font-size: 23px !important;      margin-bottom: 85px;
+    }
+    .add-charity-form .form-heading {
+      font-size: 23px;
+    }
+    .add-charity-form .one-off-payment h3 {
+      font-size: 18px;
+    }
+    .add-charity-form .Payment-box h4 {
+      font-size: 18px;
+    }
+    .add-charity-form .custom-select .select-items div, .add-charity-form .custom-select .select-selected{
+      font-size: 23px;
+      padding-bottom: 4px;
+    }
+    .add-charity-form .custom-select {
+      margin-top: -20px;
+    }
+    .add-charity-form .custom-select .form-control-select{
+      font-size: 19px;
+    }
+    .add-charity-form .radio-btn-container{
+      font-size: 19px;
+    }
+    .add-charity-form .custom-select .select-items div{
+      font-size: 17px !important;
+    } 
+
+
+    .admin-view .profile-edit-box .form-control-placeholder{
+      font-size: 23px;
+    }
+    .admin-view .profile-edit-box .form-control{
+      font-size: 23px;
+    }
+    .admin-view .profile-edit-box .form-control:focus + .form-control-placeholder, .admin-view .profile-edit-box .form-control:valid + .form-control-placeholder {
+      font-size: 19px;
+    }
+    .admin-view .profile-edit-box h1{
+      font-size: 30px;
+      margin-bottom: 48px; 
+    }
+    .admin-view .user-profile-account .profile-details-box .profile-details{
+      line-height: 31px;
+      font-size: 24px;
+    }
+    .admin-view .user-profile-account .profile-details-box .profile-details span{
+      font-size: 21px;
+    }
+    .admin-view .user-profile-account .profile-details-box .profile-img-box {
+      width: 280px;
+      height: 280px;
+    }
+    .admin-view .user-profile-account .profile-details-box{
+      padding: 101px 0px;
+    }
+    .admin-view .payment-method .payment-method-box h1{
+      font-size: 30px;
+    }
+    .admin-view .payment-method .payment-method-box .stipe-btn{
+      font-size: 23px;
+      height: 68px;
+    }
+}
+
+
+
+@media (max-width:1700px) and (min-width:1600px) {
+   .admin-view .donation-status .donation-status-box img{
+    top: -22px;
+    left: 14%;
+    width: 72%;
+   }
+   .admin-view .add-campaigns .campaigns-list-table .list-compaign-edit img {
+      width: 34px;
+      margin-left: 9px;
+   }
+   .admin-view .overview-box .overview-progress-bar .progress-bar {
+      width: 65px;
+      position: relative;
+      left: -8px;
+    }
+    .admin-view .overview-box .overview-progress-bar .overview-text {
+      font-size: 14px;
+    }
+    .admin-view .overview-box .overview-progress-bar .overview-text h3 {
+      font-size: 20px;
+      position: relative;
+      top: -9px;
+    }
+    .admin-view .overview-box .overview-progress-bar {
+         margin-bottom: 48px;
+    }
+
+    .admin-view .charity-list .campaigns-list-table .list-compaign-edit img{
+      width: 35px;
+      margin-left: 11px;
+    }
+    .admin-view .add-campaigns .campaigns-list-table .userdetails-img {
+      width: 60px;
+      height: 60px;
+    }
+    .admin-view .overview-box .overview-progress-bar .overview-text {
+      font-size: 12px;
+    }
+    .admin-view .add-campaigns .campaigns-list-table .list-id-number{
+      padding: 8px 22px;
+    }
+    .admin-view .user-profile-account .profile-details-box .edit-img {
+      left: 28%;
+    }
+}
+
+
+@media (max-width:1280px) and (min-width:1200px) {
+    .admin-view .container-fluid {
+        padding: 0px 4% !important;
+    }
+}
+
+
+@media (max-width:786px) and (min-width:320px) {
+    .admin-view .container-fluid {
+        padding: 0px 6% !important;
+    }
+    .admin-view-text {
+        margin-top: 27px;
+    }
+    .admin-view-heading h1 {
+        font-size: 21px !important;
+    }
+    .admin-view-heading p {
+        font-size: 14px !important;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .donation-status{
+        margin-bottom: 40px;
+    }
+    .donation-status-box {
+        padding: 21px 20px 6px 20px;
+        margin-bottom: 23px;
+    }
+    .donation-status-box-text h2 {
+        font-size: 21px;
+    }
+    .donation-status-box div {
+        text-align: left;
+    }
+    h2.add-campaigns-heading {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .overview-box{
+        margin-top: 50px;
+    }
+    .campaigns-graph img {
+      width: 100% !important;
+      height: auto !important;
+    }
+    .campaigns-list-table th {
+        padding: 18px 27px 16px 16px !important;
+    }
+    .campaigns-list-table td {
+        padding: 18px 20px 0px 16px !important;
+        white-space: unset;
+    }
+    .admin-view .charity-list .campaigns-list-table th {
+    padding: 32px 20px 23px 20px !important;
+    }
+    .admin-view .charity-list .campaigns-list-table td{
+         padding: 47px 20px 0px 18px !important;
+         white-space: unset;
+    }
+    .admin-view .admin-view-text .add-charity-btn{
+       width: 100%;
+       margin-top: 30px;
+    }
+    button.export-csv-format-btn{
+       width: 100%;
+       margin-top: 30px;
+    }
+    .admin-view .add-campaigns .campaigns-list-header .add-campaigns-list-btn{
+      width: 100%;
+    }
+    .admin-view .add-campaigns .campaigns-list-table .userdetails-img {
+      width: 47px;
+    }
+    .admin-view .add-campaigns .campaigns-list-table th{
+      padding: 18px 0px 23px 20px !important;
+    }
+    .admin-view .add-campaigns .campaigns-list-table td{
+      padding: 18px 20px 16px 20px !important;
+      white-space: unset;
+    }
+    .admin-view .add-campaigns .campaigns-list-table .userdetails-text{
+      padding-left: 0px;
+    }
+    .admin-view .charity-list .campaigns-list-table .userdetails-text{
+      padding-left: 0px;
+    }
+    .admin-view .search-bar {
+      display: inline-block;
+    }
+    .admin-view .search-bar .widget-filter-btn {
+    width: 100%;
+    padding: 33px 0px;
+    }
+    .admin-view .search-bar .input-group {
+    width: 100%;
+    }
+    .table-responsive{
+    border: 0px solid #dddddd;
+    }
+    .admin-view .charity-list{
+    padding: 0px 25px 22px 17px;
+    }
+    .admin-view .charity-list .pagination-box .show-pagination-value {
+    text-align: left;
+    margin-top: 20px;
+    }
+
+    .add-charity-form{
+     padding: 50px 22px;
+    }
+
+    .add-charity-form .point-of-contact{
+      padding: 42px 14px 0px 14px;
+    }
+
+    .add-charity-form .btn-primary{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+   .add-charity-form .radio-btn-container {
+    padding-left: 35px;
+    margin-bottom: 54px;
+    margin-right: 13px;
+    margin-left: 0px;
+    font-weight: 500;
+    float: unset;
+    top: 9px;
+  }
+  .select-selected {
+    padding: 8px 9px;
+  }
+  label.form-control-select {
+    padding-left: 8px;
+  }
+  .add-charity-form .one-off-payment div {
+    display: block;
+    width: 100%;
+  }
+  .add-charity-form .add-payment-btn {
+    float: unset;
+    margin-right: 0px !important;
+    margin-bottom: 11px !important;
+  }
+  .add-charity-form .Payment-box {
+    padding: 29px 10px 1px 10px;
+    margin-bottom: 57px;
+  }
+  .add-charity-form .edit-placement-url {
+    width: 75%;
+  }
+  .admin-view .overview-box .overview-progress-bar .progress-bar {
+    width: 56px;
+    position: relative;
+    left: 0px;
+    margin-right: 21px;
+  }
+  .admin-view .overview-box .overview-progress-bar .overview-text {
+    font-size: 14px;
+  }
+  .admin-view .overview-box .overview-progress-bar .overview-text h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .admin-view .admin-view-text .admin-view-contact-btn{
+    width:100%;
+  }  
+  .admin-view .user-profile-account .profile-details-box{
+    padding: 78px 0px;
+    margin-bottom: 40px;
+  }
+  .admin-view .profile-edit-box{
+    padding: 55px 40px;
+  }
+  .admin-view .payment-method .payment-method-box{
+    padding: 50px 30px 50px 30px;
+  }
+  .admin-view .payment-method .payment-method-box .stipe-btn{
+    float: unset;
+    margin-top: 30px;
+  }
+}
+
+
+

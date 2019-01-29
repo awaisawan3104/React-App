@@ -1,0 +1,132 @@
+
+/* ======= GLOBAL ======= */
+
+.login-page {
+    background-image: url(../images/bg.png) !important;
+    background-position: bottom center;
+    background-size: 100%;
+}
+.register-page {
+    background-image: url(../images/bg.png) !important;
+    background-position: bottom center;
+    background-size: 100%;
+}
+.reset-password {
+    background-image: url(../images/bg.png) !important;
+    background-position: bottom center;
+    background-size: 100%;
+}
+li.active:after{
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    content: "";
+    border-top: 14px solid #209cee;
+    position: absolute;
+    bottom: -35px;
+    width: 0px;
+    left: 39%;
+    margin-left: -10px;
+}
+.edit-hover{
+    display: none;
+}
+.list-compaign-edit span:hover .edit-view {
+    display: none !important;
+}
+.list-compaign-edit span:hover .edit-hover {
+    display: inline-block;
+}
+
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.mobile-menu{
+    display: none;
+}
+
+
+.sign-up .step-list .step.current {
+    box-shadow: none !important;
+    background: url(../images/activeform.png) !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.sign-up .step-list .step.done {
+    background: url(../images/compform.png) !important;
+    background-size: 87% !important;
+    background-repeat: no-repeat !important;
+    background-color: #e8e8e8 !important;
+    background-position: 1px 3px !important;
+}
+
+.last-box {
+    background: url(../images/bg.jpg) !important;
+}
+
+.tell-us-about-box {
+    text-align: center;
+    padding: 122px 0px;
+    background: url(../images/bg.jpg) !important;
+    margin: 25px 0px 160px 0px;
+}
+.tell-us-about-box .btn {
+    background: #209cee !important;
+    border-color: #209cee;
+    padding: 13px 33px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+textarea#msg-box {
+    font-size: 14px;
+    padding-top: 10px;
+}
+.container-fluid {
+    padding: 0 7% !important;
+}
+
+.btn-primary:focus{
+    background: transparent;
+    border-color: #209cee !important;
+}
+
+@media (max-width:2500px) and (min-width:1920px) {
+    .container-fluid {
+       padding: 0 7% !important;
+    }
+}
+@media (max-width:1500px) and (min-width:1300px) {
+    .container-fluid {
+        padding: 0 8% !important;
+    }
+}  
+
+
+
+kit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+

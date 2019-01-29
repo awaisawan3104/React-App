@@ -1,0 +1,1073 @@
+@import "variables.less";
+
+.login-page{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    
+    .login-form {
+       text-align: center;
+    }
+
+    .login-form-logo-img {
+       width: 150px;
+    }
+
+    .login-form-heading {
+       font-size: 1.8rem;
+       color: #000;
+       margin-top: 10px;
+       margin-bottom: 30px;
+    }
+
+    .main-div {
+       background-color: @formboxbg;
+       border-radius: 2px;
+       margin: 10px auto 30px;
+       max-width: 46%;
+       padding: 40px 50px 50px 50px;
+       box-shadow: @mainboxshadow;
+    }
+    
+    #login {
+       text-align: left;
+    }
+
+    .form-group {
+       position: relative;
+       margin-bottom: 4rem;
+       border-bottom: @inputborderbottom;
+       text-align: left;
+    }
+
+    .form-control-placeholder {
+       position: absolute;
+       top: 0;
+       padding: 3px 0 0 9px;
+       transition: all 200ms;
+       font-size: 1.7rem;
+       color: @labelcolor;
+       font-weight: normal; 
+
+    }
+
+    .form-control:focus + .form-control-placeholder,
+    .form-control:valid + .form-control-placeholder {
+       font-size: 1.3rem;
+       transform: translate3d(0, -100%, 0);
+       opacity: 1;
+       padding: 0px 0 0 7px;
+       top: 15px;
+    }
+
+    .form-input-box {
+       display: inline-block;
+    }
+
+    .right-box{
+       width:84%;
+       text-align:left;
+    }
+
+    .form-control{
+       border: @inputborder;
+       margin-bottom:2px;
+       font-size: @inputfontsize;
+       padding: 0px 0px 9px 9px;
+       color: @inputcolor;
+       position: relative;
+       top: 9px;
+       background: @inputbg;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .img-box img {
+       width: 30px;
+    }
+
+    .btn.btn-primary {
+        background: @primarybg none repeat scroll 0 0;
+        border-color: @primaryborder;
+        color: @btncolor;
+        font-size: @btnfontsize;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        border-radius: @btnborderradius;
+        text-transform: capitalize;
+        font-weight: @btnfontweight;
+    }
+
+    .register-btn.btn.btn-primary {
+       margin-top: 25px;
+       background: @registerbg;
+       border-color: @registerborder;
+       border-radius: @btnborderradius;
+       border: 1px solid #ddd;
+       color: #000;
+
+        &:hover{
+          background:#208abb;
+          color:#fff;
+        }
+    }
+
+    .login-form-bottom-box {
+       margin-top: 45px;
+       color: #209cee;
+
+        .google-auth {
+            text-align: left;
+            color: #000;
+            margin-top: -5px;
+           
+                img {
+                        width: 35px;
+                        position: relative;
+                        margin-right: 10px;
+                        top: -4px;
+                }
+        } 
+        
+        a{
+          color: #209cee;
+        }  
+    }
+}
+
+
+.register-page{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    
+    .register-form {
+       text-align: center;
+    }
+
+    .register-form-logo-img {
+       width: 150px;
+    }
+
+    .register-form-heading {
+       font-size: 1.8rem;
+       color: #000;
+       margin-top: 10px;
+       margin-bottom: 30px;
+    }
+
+    .main-div {
+       background-color: @formboxbg;
+       border-radius: 2px;
+       margin: 10px auto 30px;
+       max-width: 46%;
+       padding: 40px 50px 50px 50px;
+       box-shadow: @mainboxshadow;
+    }
+    
+    #register {
+       text-align: left;
+    }
+
+    .form-group {
+       position: relative;
+       margin-bottom: 4rem;
+       border-bottom: @inputborderbottom;
+       text-align: left;
+    }
+
+    .form-control-placeholder {
+       position: absolute;
+       top: 0;
+       padding: 3px 0 0 9px;
+       transition: all 200ms;
+       font-size: 1.7rem;
+       color: @labelcolor;
+       font-weight: normal; 
+
+    }
+
+    .form-control:focus + .form-control-placeholder,
+    .form-control:valid + .form-control-placeholder {
+       font-size: 1.3rem;
+       transform: translate3d(0, -100%, 0);
+       opacity: 1;
+       padding: 0px 0 0 7px;
+       top: 15px;
+    }
+
+    .form-input-box {
+       display: inline-block;
+    }
+
+    .right-box{
+       width:84%;
+       text-align:left;
+    }
+
+    .form-control{
+       border: @inputborder;
+       margin-bottom:2px;
+       font-size: @inputfontsize;
+       padding: 0px 0px 9px 9px;
+       color: @inputcolor;
+       position: relative;
+       top: 9px;
+       background: @inputbg;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .img-box img {
+       width: 30px;
+    }
+
+    .btn-primary {
+        background: @primarybg none repeat scroll 0 0;
+        border-color: @primaryborder;
+        color: @btncolor;
+        font-size: @btnfontsize;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        border-radius: @btnborderradius;
+        text-transform: capitalize;
+        font-weight: @btnfontweight;
+    }
+
+    .register-form-bottom-box {
+       margin-top: 34px;
+
+         a{
+           color: #99a0ae;
+         }
+    }
+
+    .checkbox-container{
+       display: block;
+       position: relative;
+       padding-left: 35px;
+       margin-bottom: 0px;
+       cursor: pointer;
+       font-size: 1.5rem;
+       color: #000;
+       font-weight: normal;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+
+                &:checked ~ .checkmark {
+                    background-color: #2196F3;
+                }
+
+                &:checked ~ .checkmark:after {
+                    display: block;
+                }
+        }        
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 10px;
+            top: 6px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+      }
+    }
+
+    .terms-cond-checkbox {
+       border-bottom: none !important;
+    }
+
+}
+
+
+.reset-password{
+    padding-top: 7%;
+    padding-bottom: 19%;
+    
+    .login-form {
+       text-align: center;
+    }
+
+    .login-form-logo-img {
+       width: 150px;
+    }
+
+    .login-form-heading {
+       font-size: 1.8rem;
+       color: #000;
+       margin-top: 10px;
+       margin-bottom: 30px;
+    }
+
+    .main-div {
+       background-color: @formboxbg;
+       border-radius: 2px;
+       margin: 10px auto 30px;
+       max-width: 46%;
+       padding: 40px 50px 50px 50px;
+       box-shadow: @mainboxshadow;
+    }
+    
+    #login {
+       text-align: left;
+    }
+
+    .form-group {
+       position: relative;
+       margin-bottom: 4rem;
+       border-bottom: @inputborderbottom;
+       text-align: left;
+    }
+
+    .form-control-placeholder {
+       position: absolute;
+       top: 0;
+       padding: 3px 0 0 9px;
+       transition: all 200ms;
+       font-size: 1.7rem;
+       color: @labelcolor;
+       font-weight: normal; 
+
+    }
+
+    .form-control:focus + .form-control-placeholder,
+    .form-control:valid + .form-control-placeholder {
+       font-size: 1.3rem;
+       transform: translate3d(0, -100%, 0);
+       opacity: 1;
+       padding: 0px 0 0 7px;
+       top: 15px;
+    }
+
+    .form-input-box {
+       display: inline-block;
+    }
+
+    .right-box{
+       width:84%;
+       text-align:left;
+    }
+
+    .form-control{
+       border: @inputborder;
+       margin-bottom:2px;
+       font-size: @inputfontsize;
+       padding: 0px 0px 9px 9px;
+       color: @inputcolor;
+       position: relative;
+       top: 9px;
+       background: @inputbg;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .img-box img {
+       width: 30px;
+    }
+
+    .btn.btn-primary {
+        background: @primarybg none repeat scroll 0 0;
+        border-color: @primaryborder;
+        color: @btncolor;
+        font-size: @btnfontsize;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        border-radius: @btnborderradius;
+        text-transform: capitalize;
+        font-weight: @btnfontweight;
+    }
+    
+    .login-form-bottom-box {
+       margin-top: 31px;
+       color: #209cee;
+        
+        a{
+          color: #99a0ae;
+        }  
+    }
+}
+
+
+.header-menu{
+    background: @headerbgcolor;
+    width: 100%;
+
+    .fix-nav{
+        display: inline-block;
+    }
+
+    .logo {
+        background: #fff;
+        padding: 10px 37px;
+        position: relative;
+    }
+
+    .left-menu {
+        
+        ul{
+            list-style:none;
+
+           li{
+              display: block;
+              float: left;
+              margin-right: 10px;
+              padding: 10px 30px;
+              position: relative;
+              top: 18px;
+              color: #fff;
+
+                .active{
+                    color: #fff;
+                   
+                &:after{
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    content: "";
+                    border-top: 14px solid #209cee;
+                    position: absolute;
+                    bottom: -35px;
+                    width: 0px;
+                    left: 44%;
+                    margin-left: -10px;
+                }
+
+                }
+
+                a{
+                    color: @headertext;
+                    text-transform: uppercase;
+                    font-size: @headerfontsize;
+                    font-weight: 600;
+                }
+
+                img{
+                    position: absolute;
+                    left: 29px;
+                    top: 10px;
+                    margin-left: -30px;
+                    width: 21px;
+                }
+                .donaco-menu-icon {
+                    width: 13px;
+                    left: 38px !important;
+                    position: absolute;
+                    top:8px;
+                }
+            }
+        }
+
+        .mobile-menu {
+          display: none;
+        }
+    }
+    
+    .right-menu {
+        float: right;
+        position: relative;
+        top: 12px;
+        right: 38px;
+        
+        div {
+            display: inline-block;
+
+        }   
+        .user-name {
+            color: #fff;
+            position: relative;
+            top: 15px;
+            font-size: 12px;
+            margin-left: 5px;
+
+            span{
+                font-size: 10px;
+                position: relative;
+                top: -6px;
+            }
+        }
+
+        .user-profile {
+            margin-left: 10px;
+            cursor: pointer;
+
+                i {
+                    font: normal normal normal 14px/1 FontAwesome;
+                    color: #fff;
+                    position: relative;
+                    top: 4px;
+                    font-size: 20px;
+                }
+        }
+
+        .user-img {
+            width: 41px;
+            height: auto;
+
+            &:after{
+              content: "";
+              position: relative;
+              width: 9px;
+              height: 9px;
+              background: #1ce684;
+              display: block;
+              border-radius: 50%;
+              top: -39px;
+              left: 31px;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .dropdown-menu{
+          padding: 10px 4px;
+          box-shadow: 3px 4px 13px 0px #ddd;
+          border: none;
+          margin-top: 15px;
+          min-width: 172px;  
+          border-radius: 0px 0px 5px 5px;
+            img{ 
+              width: 29px !important;
+              margin-right: 15px;
+            } 
+            
+            li{
+              .menu-icon-hover {
+                display: none;
+              }
+
+              &:hover .menu-icon {
+                display: none;
+              }
+
+              &:hover .menu-icon-hover {
+                display: inline-block;
+              }
+            
+            }
+
+            a{
+               font-size:14px;
+               text-transform: uppercase;
+                  
+                &:hover{
+                   background-color: transparent;
+                   color: #209cee;
+                } 
+
+                &:focus{
+                  outline:none;
+                  background-color:#fff;
+                } 
+
+            }
+
+            &:before {
+              border-left: 13px solid transparent;
+              border-right: 13px solid transparent;
+              content: "";
+              border-bottom: 13px solid #ffffff;
+              position: absolute;
+              width: 0px;
+              right: 7%;
+              margin-top: -23px;
+            }
+        }
+    }
+}
+
+
+
+
+.charity-form{
+    padding-top: 5%;
+    background: #f4f5f9;
+    padding-bottom: 2%;
+    
+    .login-form {
+       text-align: center;
+    }
+
+    .login-form-logo-img {
+       width: 150px;
+    }
+
+    .login-form-heading {
+       font-size: 1.8rem;
+       color: #000;
+       margin-top: 10px;
+       margin-bottom: 30px;
+    }
+
+    .main-div {
+       background-color: @formboxbg;
+       border-radius: 2px;
+       margin: 10px auto 30px;
+       max-width: 46%;
+       padding: 40px 50px 50px 50px;
+       box-shadow: @mainboxshadow;
+    }
+    
+    #login {
+       text-align: left;
+    }
+
+    .form-group {
+       position: relative;
+       margin-bottom: 4rem;
+       border-bottom: @inputborderbottom;
+       text-align: left;
+    }
+
+    .form-control-placeholder {
+       position: absolute;
+       top: 0;
+       padding: 3px 0 0 9px;
+       transition: all 200ms;
+       font-size: 1.7rem;
+       color: @labelcolor;
+       font-weight: normal; 
+
+    }
+
+    .form-control:focus + .form-control-placeholder,
+    .form-control:valid + .form-control-placeholder {
+       font-size: 1.3rem;
+       transform: translate3d(0, -100%, 0);
+       opacity: 1;
+       padding: 0px 0 0 7px;
+       top: 15px;
+    }
+
+    .form-input-box {
+       display: inline-block;
+    }
+
+    .right-box{
+       width:84%;
+       text-align:left;
+       padding-bottom: 7px;
+    }
+
+    .form-control{
+       border: @inputborder;
+       margin-bottom:2px;
+       font-size: @inputfontsize;
+       padding: 4px 0px 9px 9px;
+       color: @inputcolor;
+       position: relative;
+       top: 9px;
+       background: @inputbg;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .btn.btn-primary {
+        background: @primarybg none repeat scroll 0 0;
+        border-color: @primaryborder;
+        color: @btncolor;
+        font-size: @btnfontsize;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        border-radius: @btnborderradius;
+        text-transform: capitalize;
+        margin-right: 6px;
+        font-weight: @btnfontweight;
+    }
+
+    .comp-btn.btn-primary {
+        width: 300px;
+        padding: 0px 26px;
+        margin: auto !important;
+        display: block;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .content-stripe-heading h1 {
+      font-size: @headingsize !important;
+      text-transform: uppercase;
+      font-weight: @headingweight;
+      color: @headingcolor;
+    }
+
+    .content-stripe-heading p {
+      color: #828282;
+    //   margin-top: -14px;
+      font-size: @subheadingsize;
+   }
+
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    font-size: 17px;
+    color: #444444;
+}
+
+@media (max-width:2500px) and (min-width:1920px) {
+
+    .login-page {
+      padding-top: 5%;
+      height: auto;
+      padding-bottom: 15%;
+    }
+
+    .login-page .login-form-heading {
+        font-size: 23px;
+        margin-bottom: 45px;
+    }
+    
+    .login-page .login-form-logo-img {
+      width: 280px;
+    } 
+
+    .login-page .main-div{
+        max-width: 57%;
+    }  
+
+    .login-page .form-control-placeholder{
+        font-size: 23px;
+    }
+
+    .login-page .form-control{
+        font-size: 23px;
+        padding: 0px 0px 18px 9px;
+    }
+
+    .login-page .form-control:focus + .form-control-placeholder, .login-page .form-control:valid + .form-control-placeholder {
+        font-size: 19px;
+        top: 22px;
+    }
+
+    .login-page .img-box img {
+        width: 48px;
+    }
+    .login-page .main-div{
+        padding: 60px 50px 50px 50px;
+    }
+    .login-page .form-group {
+        position: relative;
+        margin-bottom: 60px;
+    } 
+    .login-page .btn.btn-primary {
+        font-size: 29px;
+        height: 72px;
+    }
+    .login-page .login-form-bottom-box .google-auth img {
+        width: 51px;
+    }
+    .login-page .login-form-bottom-box .google-auth {
+        font-size: 18px;
+        position: relative;
+        top: -7px;
+    }
+    .login-page .login-form-bottom-box {
+        font-size: 18px;
+        margin-top: 75px;
+    }
+    .register-page .checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 11px;
+    top: 6px;
+    width: 8px;
+    height: 14px;
+    }
+
+
+
+
+    .register-page .login-form-heading {
+      font-size: 23px;
+      margin-bottom: 45px;
+    }
+    .register-page .login-form-logo-img {
+      width: 280px;
+    } 
+
+    .register-page .main-div{
+      max-width: 57%;
+    }  
+
+    .register-page .form-control-placeholder{
+       font-size: 23px;
+    }
+    .register-page .form-control{
+      font-size: 23px;
+      padding: 0px 0px 18px 9px;
+    }
+    .register-page .form-control:focus + .form-control-placeholder, .register-page .form-control:valid + .form-control-placeholder {
+    font-size: 19px;
+    top: 22px;
+    }
+    .register-page .img-box img {
+      width: 48px;
+    }
+    .register-page .main-div{
+      padding: 60px 50px 50px 50px;
+    }
+    .register-page .form-group {
+      position: relative;
+      margin-bottom: 60px;
+    } 
+    .register-page .btn.btn-primary {
+      font-size: 29px;
+      height: 72px;
+    }
+    .register-page .checkbox-container{
+      font-size: 20px;
+      padding-left: 52px;
+    }
+
+    .register-page .checkbox-container .checkmark{
+       height: 32px;
+       width: 32px;
+    }
+    .register-page .register-form-bottom-box a {
+      color: #99a0ae;
+      font-size: 20px;
+    }
+
+
+
+    
+    .header-menu .logo{
+      padding: 14px 50px;
+    }
+    .header-menu .left-menu ul li a{
+      font-size: 18px;
+    }
+    .header-menu .left-menu ul li .donaco-menu-icon {
+        width: 17px;
+        left: 38px !important;
+    }
+    .header-menu .left-menu ul li img{
+      left: 29px;
+      top: 9px;
+      margin-left: -38px;
+      width: 31px;
+    }
+    .header-menu .left-menu ul li {
+    display: block;
+    float: left;
+    margin-right: 24px;
+    }
+    .header-menu .right-menu {
+      float: right;
+      position: relative;
+      top: 4px;
+      right: 64px;
+    }
+    .header-menu .right-menu .user-img {
+      width: 55px;
+    }
+    .header-menu .right-menu .user-name {
+      color: #fff;
+      position: relative;
+      top: 15px;
+      font-size: 18px;
+    }
+    .header-menu .right-menu .user-name span {
+      font-size: 14px;
+      position: relative;
+      top: -6px;
+    }
+    .header-menu .right-menu .user-profile i{
+      font-size: 26px;
+    }
+    .header-menu .right-menu .user-img:after{
+      width: 11px;
+      height: 11px;
+      top: -51px;
+      left: 43px;
+    }
+
+
+
+    .charity-form .content-stripe-heading h1 {
+      font-size: 30px !important;
+    }
+
+    .charity-form .content-stripe-heading p{
+      font-size: 24px;
+    }
+
+    .charity-form .form-control-placeholder{
+       font-size: 23px;
+    }
+   .charity-form .form-control{
+      font-size: 23px;
+      padding: 0px 0px 18px 9px;
+      top: 13px;
+    }
+    .charity-form .form-control:focus + .form-control-placeholder, .charity-form  .form-control:valid + .form-control-placeholder {
+    font-size: 19px;
+    top: 22px;
+    }
+    .charity-form .img-box img {
+      width: 48px;
+    }
+    .charity-form .main-div{
+      padding: 60px 50px 50px 50px;
+    }
+    .charity-form .form-group {
+      position: relative;
+      margin-bottom: 60px;
+    } 
+    .charity-form .btn.btn-primary {
+      font-size: 20px;
+    }
+
+    .header-menu .right-menu .dropdown-menu a {
+    font-size: 18px;
+    text-transform: uppercase;
+    }
+   .header-menu .right-menu .dropdown-menu img {
+    width: 40px !important;
+    margin-right: 15px;
+   }
+   .header-menu .right-menu .dropdown-menu:before {
+    margin-top: -29px;
+   }
+   .header-menu .right-menu .dropdown-menu{
+    margin-top: 4px;
+    min-width: 231px;
+    padding: 18px 4px;
+   }
+
+   footer{
+    font-size: 21px;
+   }
+}  
+
+@media (max-width:1400px) and (min-width:1280px) {
+    .header-menu .left-menu ul li {
+      margin-right: 0px;
+      padding: 10px 28px;
+    }  
+}
+
+@media (max-width:786px) and (min-width:320px) {
+    .main-div {
+       max-width: 100% !important;
+       padding: 39px 20px 50px 20px !important;
+    }
+    .login-page {  
+      padding-bottom: 32% !important;
+      background-size: inherit;
+      padding-top: 20%;
+    }
+    .reset-password {
+      padding-bottom: 52% !important;
+      background-size: inherit;
+      padding-top: 20%;
+    }
+    .register-page{
+      background-size: inherit;
+    }
+    .login-page .google-auth {
+      text-align: center !important; 
+    }
+    .google-auth img {
+      width: 28px !important;
+      margin-right: 10px !important;
+      top: -3px !important;
+    }
+    .header-menu .right-menu {
+        top: 12px !important;
+        right: 15px !important;
+    }
+    .header-menu .logo {
+        padding: 9px 28px !important;
+    }
+
+    .header-menu .right-menu .dropdown-menu{
+      padding: 10px 0px;
+      min-width: 163px;
+      margin-top: 13px;
+    }
+    
+   .mobile-menu {
+    display: block !important;
+   }
+   .header-nav{
+     display: none;
+   }
+   .dropdown.mobile-menu.open li a {
+    color: #545454;
+   }
+   .dropdown.mobile-menu.open ul {
+    padding-bottom: 30px;
+    margin-top: 25px;
+    margin-left: -5px;
+   }
+   .header-menu .left-menu ul li{
+      padding: 4px 7px;
+   }
+   button.dropdown-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 8px;
+  }
+  .header-menu .right-menu .dropdown-menu a{
+    padding: 10px 15px;
+  }
+  .tell-us-about-box .btn {
+    background: #209cee !important;
+    border-color: #209cee;
+    padding: 9px 26px;
+    font-size: 11px;
+    border-radius: 5px;
+  }
+  footer{
+    font-size: 13px;
+  }
+}
+

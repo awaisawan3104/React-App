@@ -1,0 +1,39 @@
+.login-page {
+  background-image: url(./images/bg.png) !important;
+  background-position: bottom center;
+  background-size: 100%;
+}
+.register-page {
+  background-image: url(./images/bg.png) !important;
+  background-position: bottom center;
+  background-size: 100%;
+}
+
+.sign-up .step-list .step.current {
+  box-shadow: none !important;
+  background: url(./images/activeform.png) !important;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+}
+
+.sign-up .step-list .step.done {
+  background: url(./images/compform.png) !important;
+  background-size: 87% !important;
+  background-repeat: no-repeat !important;
+  background-color: #e8e8e8 !important;
+  background-position: 1px 3px !important;
+}
+
+.last-box {
+  background: url(./images/bg.jpg) !important;
+}
+
+.tell-us-about-box {
+  text-align: center;
+  padding: 122px 0px;
+  background: url(./images/bg.jpg) !important;
+  margin: 25px 0px 160px 0px;
+}
